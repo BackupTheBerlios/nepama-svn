@@ -1,0 +1,3 @@
+<h1>&rarr; Benutzerkontrollzentrum: Zugangsdaten fehlerhaft</h1>
+
+<p class="textj"><img src="{$imagedir}error.png" alt="Fehler" class="imgalert" />Beim Einloggen ist ein Fehler aufgetreten. Entweder existiert der Account nicht, das Passwort wurde falsch eingegeben oder zu wurdest gebannt. Benutze am Besten die "Zurück"-Taste deines Browsers und versuche eine erneute Eingabe. Falls es weiterhin zu Problemen kommen sollte, wende dich an einen Administrator.</p>

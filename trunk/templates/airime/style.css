@@ -1,0 +1,294 @@
+<!--
+
+/*
+   nepama-0.2.1 style.css
+   style: dielan
+   
+   created: 2006-01-01
+*/
+
+
+/* body */
+body {
+	/* font */
+	font-family: Verdana, Helvetica;
+	font-size:   0.9em;
+	color:      #000;
+	
+	line-height: 130%;
+	
+	/* background */
+	background-color: #fff;
+	
+	/* margins */
+	margin:  0px;
+	padding: 0px;
+
+	background: url('images/bg.png') fixed no-repeat bottom right;
+	
+	text-align: center;
+}
+
+
+/* links */
+a:link, a:visited, a:active {
+	/* font */
+	color: #000;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+p a:link, p a:visited, p a:active {
+	/* background */
+	background-image: url('images/link.png');
+	background-position: right;
+	background-repeat: no-repeat;
+	
+	/* margins */
+	padding-right: 11px;
+}
+
+#title {
+    position: fixed;
+	top: 25px;
+	left: 15px;
+	text-align: left;
+    font-size: 3.6em;
+	font-family: Georgia;
+	font-weight: bold;
+	font-style: italic;
+	-moz-opacity: 0.8;
+}
+
+
+/* main container */
+#container {
+
+	width: 782px;
+	
+	margin: auto;
+	
+	text-align: left;
+}
+
+/* content container */
+#content {
+	/* font */
+	font-size: 0.9em;
+}
+
+/* versionstring container */
+#versionstring {
+	position: absolute; 
+	bottom: 5px; 
+	right: 15px; 
+	
+	border: 1px #999 solid;
+	
+	background-color: #fff;
+	-moz-opacity: 0.6;
+	padding: 1px;
+	text-align: center;
+}
+
+/* menu container */
+#menu {
+	/* background */    
+	/* borders */
+	position: fixed;
+	bottom: 0px;
+	
+	/* sizes */
+	width: 100%;
+	list-style-type: none;
+
+    text-align: center;
+	
+    /* margins */
+    margin: 0px;
+	padding: 0px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+
+}
+
+#menu li {
+        /* display */
+	display: inline;
+	
+	/* font */
+	font-family: Georgia;
+	font-size: 0.8em;
+	
+	background-color: #BBB;
+	border: 1px #999 solid;
+	
+	margin: 0px;
+	padding: 0px;
+}
+
+#menu li:hover {
+    /* background */
+	background-color: #CCC;
+}
+
+/* headings */
+h1, h2, h3, h4 {
+    /* font */
+	font-family: Verdana;
+	
+	/* margins */
+    margin: 0px;
+    padding-left: 15px;
+	padding-right: 15px;
+}
+
+h1 {
+	/* font */
+	font-family: Georgia;
+	font-size: 1.6em;
+	font-weight: normal;
+	line-height: 140%;
+}
+
+h2 {
+	/* font */
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+/* default text */
+p {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+table {
+	padding-left: 20px;
+	padding-right: 20px;
+}	
+
+
+img {
+	border: 0px;
+}
+
+/* justified text */
+.textj {
+	text-align: justify;
+}
+
+/* small text */
+.small {
+	font-size: 0.7em;
+}
+
+.smallj {
+	font-size: 0.7em;
+	text-align: justify;
+}
+
+.deac {
+	text-decoration: line-through;
+}
+
+.post {
+    border: 1px #999 solid;
+	background-color: #bbb;
+	
+	width: 85%;
+	margin: auto;
+}
+
+.post h1, .post h2, .post p {
+	padding-left: 5px;
+	padding-right: 5px;
+}	
+
+.facts {
+	background-color: #FFCC66;
+	border: 1px #996633 solid;
+}
+
+
+
+/* alerting image */
+.imgalert {
+	width: 48px;
+	height: 48px;
+	
+	float: left;
+	
+	margin: 5px;
+}
+
+/* forms default */
+form {
+	/* margins */
+	margin: 0px;
+	padding: 0px;
+}
+
+input, select, textarea {
+	/* font */
+	font-family: Verdana;
+	font-size: 0.8em;
+	color: #000;
+}
+
+textarea {
+	font-size: 1.0em;
+}
+
+.formtable {
+	border: 1px #999 solid;
+	padding: 0px;
+    margin: 0px;
+}
+
+.formtable td {
+	font-size: 0.9em;
+	padding: 4px;
+}
+
+.formtable .trh {
+	background-color: #bbb;
+}
+
+.formtable .trh td {
+	font-weight: bold;
+	
+	border-bottom: 2px #AAA solid;
+}
+
+.formtable .form_desc {
+	font-size: 0.8em;
+	font-style: italic;
+	
+	padding-left: 5px;
+}
+
+.formtable .td_action {
+	text-align: right;
+}
+
+.formtable .tr1 {
+	background-color: #CCC;
+}
+
+.formtable .tr2 {
+	background-color: #BBB;
+}
+
+.formtable .tr3 {
+	background-color: #DDD;
+}
+
+.formtable input, select, textarea {
+	width: 99%;
+}
+
+-->

@@ -1,7 +1,7 @@
 <?php
 
 define("STARTTIME", microtime(true));
-define("_SCRIPTNAME", "main.php5");
+define("_SCRIPTNAME", "main.php");
 
 define("MAIN", "true");
 
@@ -24,7 +24,7 @@ ini_set("allow_call_time_pass_reference", true);
 */
 require("includes.php");
 
-if(!defined("_DEBUGLVL")) 
+if(!defined("_DEBUGLVL"))
 	define("_DEBUGLVL", 3);
 
 /** DEVELOPERS NOTE
@@ -64,10 +64,10 @@ $Rows = is_numeric($Module) ? $objDb->Select(array("classname", "filename", "men
 /** DEVELOPERS NOTE
  * load default module if requested is not found
 */
-if($Rows == 0) 
+if($Rows == 0)
 {
 	$objDb->Select(array("classname", "filename", "menu"), "modules", "WHERE id = '". $Config['default_module'] ."'");
-	
+
 	// parsing default parameters
 	if(!empty($Config['default_parameters']))
 	{
@@ -105,7 +105,7 @@ $State = Main_Checklogin($objUser);
 $objTpl->assign("session_user", $objUser->GetProperty("name"));
 $objTpl->assign("session_login", ifstr($State));
 
-$GroupId = $objUser->GetProperty("groupid");	
+$GroupId = $objUser->GetProperty("groupid");
 
 /** DEVELOPERS NOTE
  * generate the menu
@@ -113,12 +113,12 @@ $GroupId = $objUser->GetProperty("groupid");
 //$MenuId = 1;
 $MenuData = array();
 $Rows = $objDb->Select(array("title", "link"), "menupoints", "WHERE `mid` = '$MenuId' AND `access` LIKE '%,$GroupId,%' ORDER BY `order`");
-if($Rows == 0) 
+if($Rows == 0)
 	$objTpl->assign("menu", array());
 else
 	while($x = $objDb->FetchArray())
 		$MenuData[] = array("title" => stripslashes($x['title']), "link" => stripslashes($x['link']), "islink" => (strlen($x['link']) > 0 ? "true" : "false"));
-	
+
 $objTpl->assign("menu", $MenuData);
 
 /** DEVELOPERS NOTE
@@ -135,6 +135,6 @@ $objTpl->assign("script_name", _SCRIPTNAME);
 $Data = $objTpl->fetchf("main.tpl");
 $Data = str_replace("\$\$", _SCRIPTNAME, $Data);
 
-print(str_replace("#DEBUGDATA#", round((microtime(true) - STARTTIME) * 1000, 2) . "µs", $Data));
+print(str_replace("#DEBUGDATA#", round((microtime(true) - STARTTIME) * 1000, 2) . "s", $Data));
 
 ?>
